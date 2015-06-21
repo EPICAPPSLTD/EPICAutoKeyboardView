@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EPICAutoKeyboardView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4wR-AQ-5kS"/>
+                        <viewControllerLayoutGuide type="bottom" id="c3h-fh-0HD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fWS-81-BZK" customClass="View" customModule="EPICAutoKeyboardView" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="a6D-mp-eh6">
+                                <rect key="frame" x="188" y="160" width="223" height="280"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yh7-4a-nS5">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ccX-HN-9Uv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.epic-apps.uk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6C-l4-CWT">
+                                <rect key="frame" x="266" y="574" width="67" height="9.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="464" id="tST-eQ-ofn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                <color key="textColor" red="0.47843140360000003" green="0.47843134399999998" blue="0.47843134399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tST-eQ-ofn"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2015 EPIC. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h40-D1-tle">
+                                <rect key="frame" x="221" y="556.5" width="157" height="9.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                <color key="textColor" red="0.47843140360000003" green="0.47843134399999998" blue="0.47843134399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCz-UB-Nom">
+                                <rect key="frame" x="20" y="28" width="270" height="30"/>
+                                <state key="normal" title="Show Keyboard"/>
+                                <connections>
+                                    <action selector="showKeyboard" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fg-p6-8hA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8be-xs-Zkw">
+                                <rect key="frame" x="310" y="28" width="270" height="30"/>
+                                <state key="normal" title="Hide Keyboard"/>
+                                <connections>
+                                    <action selector="hideKeyboard" destination="BYZ-38-t0r" eventType="touchUpInside" id="42t-Ga-91B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tCz-UB-Nom" firstAttribute="width" secondItem="8be-xs-Zkw" secondAttribute="width" id="3e5-y0-SC9"/>
+                            <constraint firstItem="a6C-l4-CWT" firstAttribute="top" secondItem="h40-D1-tle" secondAttribute="bottom" constant="8" id="C12-IN-d2s"/>
+                            <constraint firstItem="Yh7-4a-nS5" firstAttribute="centerX" secondItem="fWS-81-BZK" secondAttribute="centerX" id="Oab-iT-wFH"/>
+                            <constraint firstAttribute="centerY" secondItem="a6D-mp-eh6" secondAttribute="centerY" id="PSQ-AI-C4x"/>
+                            <constraint firstItem="8be-xs-Zkw" firstAttribute="top" secondItem="tCz-UB-Nom" secondAttribute="top" id="RFT-qW-nq3"/>
+                            <constraint firstItem="tCz-UB-Nom" firstAttribute="top" secondItem="4wR-AQ-5kS" secondAttribute="bottom" constant="8" id="VQm-fh-cA8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tCz-UB-Nom" secondAttribute="leading" id="WTo-Fu-7Pu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8be-xs-Zkw" secondAttribute="trailing" id="aki-h2-6pM"/>
+                            <constraint firstAttribute="centerX" secondItem="a6C-l4-CWT" secondAttribute="centerX" constant="0.5" id="bT6-8h-fDN"/>
+                            <constraint firstAttribute="centerX" secondItem="h40-D1-tle" secondAttribute="centerX" constant="0.5" id="hVE-1m-ujV"/>
+                            <constraint firstItem="Yh7-4a-nS5" firstAttribute="centerY" secondItem="fWS-81-BZK" secondAttribute="centerY" id="iI6-Fg-Ocj"/>
+                            <constraint firstAttribute="bottom" secondItem="a6C-l4-CWT" secondAttribute="bottom" constant="16" id="mnN-W0-hqK"/>
+                            <constraint firstItem="c3h-fh-0HD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a6D-mp-eh6" secondAttribute="bottom" constant="50" id="ofb-4o-Y4X"/>
+                            <constraint firstAttribute="centerX" secondItem="a6D-mp-eh6" secondAttribute="centerX" constant="0.5" id="uqx-CG-HWf"/>
+                            <constraint firstItem="8be-xs-Zkw" firstAttribute="leading" secondItem="tCz-UB-Nom" secondAttribute="trailing" constant="20" id="wXi-jE-5fl"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="hiddenTextField" destination="Yh7-4a-nS5" id="qfV-Xu-wYG"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="223" height="280"/>
+    </resources>
+</document>
