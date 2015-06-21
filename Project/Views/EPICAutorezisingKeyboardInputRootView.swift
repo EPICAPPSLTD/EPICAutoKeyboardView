@@ -21,13 +21,12 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
     //MARK: - lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assertionFailure("this view should only be loaded from a XIB file")
+        registerNotifications()
     }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillChangeFrame:"), name: UIKeyboardWillChangeFrameNotification, object: nil)
-
+        registerNotifications()
     }
     
     deinit {
@@ -35,6 +34,10 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
     }
     
     //MARK: - notification handling
+    private func registerNotifications() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillChangeFrame:"), name: UIKeyboardWillChangeFrameNotification, object: nil)
+    }
+    
     internal func keyboardWillChangeFrame(notification:NSNotification) {
         guard let notificationDictionary = notification.userInfo else {
             throwKeyboardNotificationAssertionFailure()
@@ -68,10 +71,10 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
     }
     
     override func layoutSubviews() {
-        super.layoutSubviews()
         originalFrame = self.window!.frame
         originalFrame.origin.y = self.frame.origin.y
         originalFrame.size.height -= originalFrame.origin.y
+        super.layoutSubviews()
     }
 
 }
