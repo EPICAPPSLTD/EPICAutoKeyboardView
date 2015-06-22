@@ -48,8 +48,6 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
             return
         }
         
-        print("transition: \(notificationDictionary[UIKeyboardFrameBeginUserInfoKey]?.CGRectValue) -> \(notificationDictionary[UIKeyboardFrameEndUserInfoKey]?.CGRectValue)")
-
         if !CGRectEqualToRect(frame, CGRectZero) {
             let keyboardTop = frame.origin.y;
             let keyboardBottom = keyboardTop + frame.size.height;            
