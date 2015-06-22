@@ -2,7 +2,7 @@
 
 EPICAutoKeyboardView is a utility UIView subclass that manages it's own autoresizing logic when the keyboard is displayed or hidden. It is designed to work on both iPhone and iPad and works in both portrait and landscape orientations. By using this class, you will avoid having to manage `UIKeyboardWillChangeFrameNotification`, `UIKeyboardWillShowNotification` and `UIKeyboardWillHideNotification`. 
 
-To use this, configure the root view of your view controllers to be a subclass of `EPICAutorezisingKeyboardInputRootView` (a mouthful, I know, but the name made sense!) on either your xib file or programatically.
+To use this, configure the root view of your view controllers to be a subclass of `EPICAutorezisingKeyboardInputRootView` (a mouthful, I know, but the name made sense!) on either your xib file or programatically, that's it! Really!.
 
 Gotchas:
 ------

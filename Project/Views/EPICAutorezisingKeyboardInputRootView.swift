@@ -17,6 +17,7 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
     
     //MARK: - variables
     private var originalFrame : CGRect!
+    private var bottomOffset : CGFloat!
     
     //MARK: - lifecycle
     override init(frame: CGRect) {
@@ -47,33 +48,38 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
             throwKeyboardNotificationAssertionFailure()
             return
         }
+        
         if !CGRectEqualToRect(frame, CGRectZero) {
             let keyboardTop = frame.origin.y;
             let keyboardBottom = keyboardTop + frame.size.height;            
             let viewBottom = originalFrame!.origin.y + originalFrame!.size.height;
-            
             if keyboardTop >= viewBottom || keyboardBottom < viewBottom {
                 //keyboard will hide or is ipad split keyboard
-                UIView.animateWithKeyboardNotificationUserInfo(notificationDictionary, block: { () -> Void in
+                UIView.animateWithKeyboardNotificationUserInfo(notificationDictionary, animation: { () -> Void in
                     self.frame = self.originalFrame!
-                    print("hide: \(self.frame)")
                 })
             } else {
                 //keyboard will show
                 var viewFrame = originalFrame!;
                 viewFrame.size.height = originalFrame!.size.height-(viewBottom-keyboardTop)
-                UIView.animateWithKeyboardNotificationUserInfo(notificationDictionary, block: { () -> Void in
+                UIView.animateWithKeyboardNotificationUserInfo(notificationDictionary, animation: { () -> Void in
                     self.frame = viewFrame
-                    print("show: \(self.frame)")
                 })
             }
         }
     }
     
+    //MARK: - layout
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        let windowFrame = self.window!.frame
+        bottomOffset = windowFrame.size.height-self.frame.origin.y-self.frame.size.height
+    }
+    
     override func layoutSubviews() {
         originalFrame = self.window!.frame
         originalFrame.origin.y = self.frame.origin.y
-        originalFrame.size.height -= originalFrame.origin.y
+        originalFrame.size.height -= originalFrame.origin.y + bottomOffset
         super.layoutSubviews()
     }
 

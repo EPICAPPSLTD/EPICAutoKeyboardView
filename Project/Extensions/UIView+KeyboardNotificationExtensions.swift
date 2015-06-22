@@ -21,7 +21,7 @@ extension UIView {
     
     - warning: This method will cause an assertion failure if the relevant keys `UIKeyboardAnimationDurationUserInfoKey` and `UIKeyboardAnimationCurveUserInfoKey` are not found in the notification dictionary
     */
-    class func animateWithKeyboardNotificationUserInfo(notificationDictionary:[NSObject : AnyObject], block:()->Void) {
+    class func animateWithKeyboardNotificationUserInfo(notificationDictionary:[NSObject : AnyObject], animation:()->Void) {
         guard let duration = notificationDictionary[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber else {
             throwKeyboardNotificationAssertionFailure()
             return
@@ -30,7 +30,7 @@ extension UIView {
             throwKeyboardNotificationAssertionFailure()
             return
         }
-        UIView.animateWithDuration(NSTimeInterval(duration.doubleValue), delay: 0, options: [UIViewAnimationOptions(rawValue: curve.unsignedLongValue), UIViewAnimationOptions.BeginFromCurrentState], animations: block, completion: nil);
+        UIView.animateWithDuration(NSTimeInterval(duration.doubleValue), delay: 0, options: [UIViewAnimationOptions(rawValue: curve.unsignedLongValue), UIViewAnimationOptions.BeginFromCurrentState], animations: animation, completion: nil);
     }
 
     
