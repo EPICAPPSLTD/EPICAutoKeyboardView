@@ -6,9 +6,7 @@ To use this, configure the root view of your view controllers to be a subclass o
 
 Gotchas:
 ------
-EPICAutoKeyboardView is designed to work as the root view of a full screen view controller. Adding this view anywhere else in the view hierarchy or inside a child view controller whose frame is not full screen might produce unexpected behaviour, specially if the view's bottom is not aligned with the screen's bottom margin, or the view's height is less than the keyboard's height. 
-
-Just stick to this one simple rule: Use this class only on the root view of view controllers being presented full screen.
+EPICAutoKeyboardView is designed to work as the root view of a full screen view controller. Adding this view anywhere else in the view hierarchy or inside a child view controller whose frame is not full screen might produce unexpected behaviour. Do yourselves a favor and just stick to this one simple rule: Use this class only on the root view of view controllers being presented full screen, capiche?
 
 Others:
 ------

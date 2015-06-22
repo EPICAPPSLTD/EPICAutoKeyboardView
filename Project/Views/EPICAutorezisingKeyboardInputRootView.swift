@@ -17,7 +17,6 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
     
     //MARK: - variables
     private var originalFrame : CGRect!
-    private var bottomOffset : CGFloat!
     
     //MARK: - lifecycle
     override init(frame: CGRect) {
@@ -49,6 +48,8 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
             return
         }
         
+        print("transition: \(notificationDictionary[UIKeyboardFrameBeginUserInfoKey]?.CGRectValue) -> \(notificationDictionary[UIKeyboardFrameEndUserInfoKey]?.CGRectValue)")
+
         if !CGRectEqualToRect(frame, CGRectZero) {
             let keyboardTop = frame.origin.y;
             let keyboardBottom = keyboardTop + frame.size.height;            
@@ -70,16 +71,10 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
     }
     
     //MARK: - layout
-    override func didMoveToWindow() {
-        super.didMoveToWindow()
-        let windowFrame = self.window!.frame
-        bottomOffset = windowFrame.size.height-self.frame.origin.y-self.frame.size.height
-    }
-    
     override func layoutSubviews() {
         originalFrame = self.window!.frame
         originalFrame.origin.y = self.frame.origin.y
-        originalFrame.size.height -= originalFrame.origin.y + bottomOffset
+        originalFrame.size.height -= originalFrame.origin.y
         super.layoutSubviews()
     }
 
