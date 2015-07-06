@@ -15,7 +15,7 @@ private func throwKeyboardNotificationAssertionFailure() {
 extension UIView {
     
     /**
-    Convenience class function for creating an animation block using the values of a `NSNotification.userInfo` dictionary passed by a `UIKeyboardWillChangeFrameNotification`, `UIKeyboardWillShowNotification` or `UIKeyboardWillHideNotification`.
+    Convenience class function for creating an animation block using the values of a `NSNotification.userInfo` dictionary passed by a `UIKeyboard` notification.
     
     - parameter notificationDictionary: The `userInfo` dictionary property of a `NSNotification` passed by a `UIKeyboardWillChangeFrameNotification`, `UIKeyboardWillShowNotification` or `UIKeyboardWillHideNotification` notification.
     

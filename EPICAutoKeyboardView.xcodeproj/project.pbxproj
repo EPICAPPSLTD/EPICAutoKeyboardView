@@ -14,7 +14,7 @@
 		8FF3A5111AD07DD800547D53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5011AD07DD800547D53 /* Images.xcassets */; };
 		8FF3A5131AD07DD800547D53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5081AD07DD800547D53 /* LaunchScreen.xib */; };
 		8FF3A5141AD07DD800547D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5091AD07DD800547D53 /* Main.storyboard */; };
-		8FF3A5151AD07DD800547D53 /* EPICAutorezisingKeyboardInputRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A50D1AD07DD800547D53 /* EPICAutorezisingKeyboardInputRootView.swift */; };
+		8FF3A5151AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A50D1AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift */; };
 		8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A5531AD0837500547D53 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		8FF3A5041AD07DD800547D53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF3A5081AD07DD800547D53 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8FF3A5091AD07DD800547D53 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8FF3A50D1AD07DD800547D53 /* EPICAutorezisingKeyboardInputRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPICAutorezisingKeyboardInputRootView.swift; sourceTree = "<group>"; };
+		8FF3A50D1AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPICAutoresizingKeyboardInputRootView.swift; sourceTree = "<group>"; };
 		8FF3A5531AD0837500547D53 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 		8FF3A50A1AD07DD800547D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8FF3A50D1AD07DD800547D53 /* EPICAutorezisingKeyboardInputRootView.swift */,
+				8FF3A50D1AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift */,
 				8FB6F6261B36A5D400331C1F /* View.swift */,
 			);
 			path = Views;
@@ -256,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */,
-				8FF3A5151AD07DD800547D53 /* EPICAutorezisingKeyboardInputRootView.swift in Sources */,
+				8FF3A5151AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift in Sources */,
 				8FB6F6271B36A5D400331C1F /* View.swift in Sources */,
 				8FB6F6251B36A1E400331C1F /* UIView+KeyboardNotificationExtensions.swift in Sources */,
 				8FF3A50E1AD07DD800547D53 /* AppDelegate.swift in Sources */,
