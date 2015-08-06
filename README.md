@@ -1,4 +1,4 @@
-# EPICColors
+# EPICAutoKeyboardView
 
 EPICAutoKeyboardView is a utility UIView subclass that manages it's own autoresizing logic when the keyboard is displayed or hidden. It is designed to work on both iPhone and iPad and works in both portrait and landscape orientations. By using this class, you will avoid having to manage `UIKeyboardWillChangeFrameNotification`, `UIKeyboardWillShowNotification` and `UIKeyboardWillHideNotification`. 
 

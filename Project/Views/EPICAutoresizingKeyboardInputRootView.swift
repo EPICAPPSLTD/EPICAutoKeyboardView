@@ -1,6 +1,6 @@
 //
 //  View.swift
-//  TES 2
+//  EPICAutoKeyboardView
 //
 //  Created by Danny Bravo on 18/04/2015.
 //  Copyright (c) 2015 EPIC. All rights reserved.
@@ -28,7 +28,7 @@ class EPICAutoresizingKeyboardInputRootView : UIView {
         commonInit()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }

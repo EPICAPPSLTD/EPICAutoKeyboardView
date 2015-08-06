@@ -3,7 +3,8 @@
 //  AutoresizingView
 //
 //  Created by Danny Bravo on 27/05/2015.
-//  Copyright (c) 2015 DigitasLBi. All rights reserved.
+//  Copyright (c) 2015 EPIC. All rights reserved.
+//  See LICENSE.txt for this sample’s licensing information
 //
 
 import UIKit
