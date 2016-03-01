@@ -11,7 +11,7 @@ EPICAutoKeyboardView is designed to work as the root view of a full screen view 
 Others:
 ------
 
-This class serves as an extension to the tutorial of the blog article: ["A new generation of UIKeyboards"](http://epic-apps.uk/2015/06/23/a-new-generation-of-uikeyboards/).
+This class serves as an extension to the tutorial of the blog article: ["Automating keyboard layouts"](http://epic-apps.uk/2015/06/23/a-new-generation-of-uikeyboards/).
 Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](helloworld@epic-apps.uk)! :)
 
 Copyright (c) EPIC 
