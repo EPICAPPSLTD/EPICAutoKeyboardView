@@ -12,7 +12,7 @@ Others:
 ------
 
 This class serves as an extension to the tutorial of the blog article: ["Automating keyboard layouts"](http://epic-apps.uk/2015/06/23/a-new-generation-of-uikeyboards/).
-Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](helloworld@epic-apps.uk)! :)
+Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](http://epic-apps.uk/contact/)! :)
 
 Copyright (c) EPIC 
 [www.epic-apps.uk](www.epic-apps.uk)
