@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8FF3A4501AD068DD00547D53"
                BuildableName = "EPICAutoKeyboardView.app"
-               BlueprintName = "EPICAutoKeyboardView"
-               ReferencedContainer = "container:EPICAutoKeyboardView.xcodeproj">
+               BlueprintName = "EPICKeyboardInputView"
+               ReferencedContainer = "container:EPICKeyboardInputView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,27 +29,27 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8FF3A4651AD068DD00547D53"
-               BuildableName = "EPICAutoKeyboardViewTests.xctest"
-               BlueprintName = "EPICAutoKeyboardViewTests"
-               ReferencedContainer = "container:EPICAutoKeyboardView.xcodeproj">
+               BuildableName = "EPICKeyboardInputView.xctest"
+               BlueprintName = "EPICKeyboardInputViewTests"
+               ReferencedContainer = "container:EPICKeyboardInputView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8FF3A4651AD068DD00547D53"
-               BuildableName = "EPICAutoKeyboardViewTests.xctest"
-               BlueprintName = "EPICAutoKeyboardViewTests"
-               ReferencedContainer = "container:EPICAutoKeyboardView.xcodeproj">
+               BuildableName = "EPICKeyboardInputView.xctest"
+               BlueprintName = "EPICKeyboardInputViewTests"
+               ReferencedContainer = "container:EPICKeyboardInputView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,19 +58,19 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FF3A4501AD068DD00547D53"
             BuildableName = "EPICAutoKeyboardView.app"
-            BlueprintName = "EPICAutoKeyboardView"
-            ReferencedContainer = "container:EPICAutoKeyboardView.xcodeproj">
+            BlueprintName = "EPICKeyboardInputView"
+            ReferencedContainer = "container:EPICKeyboardInputView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -81,18 +81,18 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FF3A4501AD068DD00547D53"
             BuildableName = "EPICAutoKeyboardView.app"
-            BlueprintName = "EPICAutoKeyboardView"
-            ReferencedContainer = "container:EPICAutoKeyboardView.xcodeproj">
+            BlueprintName = "EPICKeyboardInputView"
+            ReferencedContainer = "container:EPICKeyboardInputView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
@@ -100,8 +100,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FF3A4501AD068DD00547D53"
             BuildableName = "EPICAutoKeyboardView.app"
-            BlueprintName = "EPICAutoKeyboardView"
-            ReferencedContainer = "container:EPICAutoKeyboardView.xcodeproj">
+            BlueprintName = "EPICKeyboardInputView"
+            ReferencedContainer = "container:EPICKeyboardInputView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

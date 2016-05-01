@@ -9,7 +9,7 @@
 
 import UIKit
 
-class View : EPICAutoresizingKeyboardInputRootView {
+class View : EPICKeyboardInputView {
     
     //MARK: - outlets
     @IBOutlet var hiddenTextField : UITextField!

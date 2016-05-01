@@ -14,7 +14,7 @@
 		8FF3A5111AD07DD800547D53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5011AD07DD800547D53 /* Images.xcassets */; };
 		8FF3A5131AD07DD800547D53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5081AD07DD800547D53 /* LaunchScreen.xib */; };
 		8FF3A5141AD07DD800547D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5091AD07DD800547D53 /* Main.storyboard */; };
-		8FF3A5151AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A50D1AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift */; };
+		8FF3A5151AD07DD800547D53 /* EPICKeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A50D1AD07DD800547D53 /* EPICKeyboardInputView.swift */; };
 		8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A5531AD0837500547D53 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,15 +32,15 @@
 		8F8C3E081AD92CBA00CB431E /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = SOURCE_ROOT; };
 		8FB6F6241B36A1E400331C1F /* UIView+KeyboardNotificationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+KeyboardNotificationExtensions.swift"; sourceTree = "<group>"; };
 		8FB6F6261B36A5D400331C1F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		8FF3A4511AD068DD00547D53 /* EPICAutoKeyboardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICAutoKeyboardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FF3A4661AD068DD00547D53 /* EPICAutoKeyboardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICAutoKeyboardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF3A4511AD068DD00547D53 /* EPICKeyboardInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICKeyboardInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF3A4661AD068DD00547D53 /* EPICKeyboardInputView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICKeyboardInputView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF3A4E81AD07DA200547D53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF3A4ED1AD07DD800547D53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FF3A5011AD07DD800547D53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8FF3A5041AD07DD800547D53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF3A5081AD07DD800547D53 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8FF3A5091AD07DD800547D53 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8FF3A50D1AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPICAutoresizingKeyboardInputRootView.swift; sourceTree = "<group>"; };
+		8FF3A50D1AD07DD800547D53 /* EPICKeyboardInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPICKeyboardInputView.swift; sourceTree = "<group>"; };
 		8FF3A5531AD0837500547D53 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +74,8 @@
 		8FF3A4521AD068DD00547D53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FF3A4511AD068DD00547D53 /* EPICAutoKeyboardView.app */,
-				8FF3A4661AD068DD00547D53 /* EPICAutoKeyboardViewTests.xctest */,
+				8FF3A4511AD068DD00547D53 /* EPICKeyboardInputView.app */,
+				8FF3A4661AD068DD00547D53 /* EPICKeyboardInputView.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 		8FF3A50A1AD07DD800547D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8FF3A50D1AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift */,
+				8FF3A50D1AD07DD800547D53 /* EPICKeyboardInputView.swift */,
 				8FB6F6261B36A5D400331C1F /* View.swift */,
 			);
 			path = Views;
@@ -156,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FF3A4501AD068DD00547D53 /* EPICAutoKeyboardView */ = {
+		8FF3A4501AD068DD00547D53 /* EPICKeyboardInputView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FF3A4701AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICAutoKeyboardView" */;
+			buildConfigurationList = 8FF3A4701AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICKeyboardInputView" */;
 			buildPhases = (
 				8FF3A44D1AD068DD00547D53 /* Sources */,
 				8FF3A44E1AD068DD00547D53 /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = EPICAutoKeyboardView;
+			name = EPICKeyboardInputView;
 			productName = BaseProject;
-			productReference = 8FF3A4511AD068DD00547D53 /* EPICAutoKeyboardView.app */;
+			productReference = 8FF3A4511AD068DD00547D53 /* EPICKeyboardInputView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8FF3A4651AD068DD00547D53 /* EPICAutoKeyboardViewTests */ = {
+		8FF3A4651AD068DD00547D53 /* EPICKeyboardInputViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FF3A4731AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICAutoKeyboardViewTests" */;
+			buildConfigurationList = 8FF3A4731AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICKeyboardInputViewTests" */;
 			buildPhases = (
 				8FF3A4621AD068DD00547D53 /* Sources */,
 				8FF3A4631AD068DD00547D53 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				8FF3A4681AD068DD00547D53 /* PBXTargetDependency */,
 			);
-			name = EPICAutoKeyboardViewTests;
+			name = EPICKeyboardInputViewTests;
 			productName = BaseProjectTests;
-			productReference = 8FF3A4661AD068DD00547D53 /* EPICAutoKeyboardViewTests.xctest */;
+			productReference = 8FF3A4661AD068DD00547D53 /* EPICKeyboardInputView.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8FF3A44C1AD068DD00547D53 /* Build configuration list for PBXProject "EPICAutoKeyboardView" */;
+			buildConfigurationList = 8FF3A44C1AD068DD00547D53 /* Build configuration list for PBXProject "EPICKeyboardInputView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FF3A4501AD068DD00547D53 /* EPICAutoKeyboardView */,
-				8FF3A4651AD068DD00547D53 /* EPICAutoKeyboardViewTests */,
+				8FF3A4501AD068DD00547D53 /* EPICKeyboardInputView */,
+				8FF3A4651AD068DD00547D53 /* EPICKeyboardInputViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */,
-				8FF3A5151AD07DD800547D53 /* EPICAutoresizingKeyboardInputRootView.swift in Sources */,
+				8FF3A5151AD07DD800547D53 /* EPICKeyboardInputView.swift in Sources */,
 				8FB6F6271B36A5D400331C1F /* View.swift in Sources */,
 				8FB6F6251B36A1E400331C1F /* UIView+KeyboardNotificationExtensions.swift in Sources */,
 				8FF3A50E1AD07DD800547D53 /* AppDelegate.swift in Sources */,
@@ -275,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		8FF3A4681AD068DD00547D53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8FF3A4501AD068DD00547D53 /* EPICAutoKeyboardView */;
+			target = 8FF3A4501AD068DD00547D53 /* EPICKeyboardInputView */;
 			targetProxy = 8FF3A4671AD068DD00547D53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -323,7 +323,7 @@
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = EPICAutoKeyboardView;
+				PRODUCT_NAME = EPICKeyboardInputView;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = AdHoc;
@@ -339,7 +339,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = EPICAutoKeyboardViewTests;
+				PRODUCT_NAME = EPICKeyboardInputView;
 			};
 			name = AdHoc;
 		};
@@ -428,7 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = EPICAutoKeyboardView;
+				PRODUCT_NAME = EPICKeyboardInputView;
 			};
 			name = Debug;
 		};
@@ -440,7 +440,7 @@
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = EPICAutoKeyboardView;
+				PRODUCT_NAME = EPICKeyboardInputView;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -461,7 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = EPICAutoKeyboardViewTests;
+				PRODUCT_NAME = EPICKeyboardInputView;
 			};
 			name = Debug;
 		};
@@ -476,14 +476,14 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = EPICAutoKeyboardViewTests;
+				PRODUCT_NAME = EPICKeyboardInputView;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FF3A44C1AD068DD00547D53 /* Build configuration list for PBXProject "EPICAutoKeyboardView" */ = {
+		8FF3A44C1AD068DD00547D53 /* Build configuration list for PBXProject "EPICKeyboardInputView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FF3A46E1AD068DD00547D53 /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FF3A4701AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICAutoKeyboardView" */ = {
+		8FF3A4701AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICKeyboardInputView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FF3A4711AD068DD00547D53 /* Debug */,
@@ -503,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FF3A4731AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICAutoKeyboardViewTests" */ = {
+		8FF3A4731AD068DD00547D53 /* Build configuration list for PBXNativeTarget "EPICKeyboardInputViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FF3A4741AD068DD00547D53 /* Debug */,
